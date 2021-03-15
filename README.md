@@ -5,7 +5,7 @@
 **Requirements**: Tweepy, Access to Twitters Api
 
 
-Main File(bot.py)
+**Main File(bot.py)**
 ```py
 # import
 from tweepy import OAuthHandler
@@ -70,7 +70,8 @@ api = API(auth, wait_on_rate_limit=True)
 create_stream(api)
 ```
 
-credentials(credentials.py)
+**credentials(credentials.py)**
+```py
 credentials = dict(
     screen_name = 'YOUR_TAG',
     consumer_key = 'xxx', 
@@ -78,7 +79,7 @@ credentials = dict(
     access_token = 'xxx',
     access_token_secret = 'xxx',
 )
-
+```
 
 
 
