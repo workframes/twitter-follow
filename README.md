@@ -1,7 +1,11 @@
 # twitter-follow
-**WARNING**: Mind this is against the twitter terms of service
+**WARNING**: Mind this is against the twitter terms of service(https://help.twitter.com/en/using-twitter/twitter-follow-limit)
+<img width="659" alt="Screen Shot 2021-03-15 at 9 12 30 AM" src="https://user-images.githubusercontent.com/68570351/111184823-93f2ed00-856e-11eb-82f4-f71c17ee67cf.png">
 
-Main File: 
+**Requirements**: Tweepy, Access to Twitters Api
+
+
+Main File(bot.py)
 ```py
 # import
 from tweepy import OAuthHandler
@@ -33,6 +37,7 @@ class my_stream(StreamListener):
     def on_status(self, status):
         global api
         try:
+
             api.create_friendship(status.user.screen_name)
             print(f"New Friendship Created: https://twitter.com/{status.user.screen_name}")
             sleep(25)
@@ -64,3 +69,20 @@ auth.set_access_token(credentials['access_token'], credentials['access_token_sec
 api = API(auth, wait_on_rate_limit=True)
 create_stream(api)
 ```
+
+credentials(credentials.py)
+credentials = dict(
+    screen_name = 'YOUR_TAG',
+    consumer_key = 'xxx', 
+    consumer_secret = 'xxx',
+    access_token = 'xxx',
+    access_token_secret = 'xxx',
+)
+
+
+
+
+
+
+
+
