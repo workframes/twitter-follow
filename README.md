@@ -1,5 +1,6 @@
 # twitter-follow
 **WARNING**: Mind this is against the twitter terms of service(https://help.twitter.com/en/using-twitter/twitter-follow-limit)
+
 <img width="659" alt="Screen Shot 2021-03-15 at 9 12 30 AM" src="https://user-images.githubusercontent.com/68570351/111184823-93f2ed00-856e-11eb-82f4-f71c17ee67cf.png">
 
 **Requirements**: Tweepy, Access to Twitters Api
